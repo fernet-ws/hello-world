@@ -1,0 +1,34 @@
+{
+  "name": "@pragmore/fernet",
+  "version": "0.2.1",
+  "description": "npm package for the PHP Framework Fernet",
+  "keywords": [
+    "sass",
+    "fernet",
+    "css"
+  ],
+  "author": "Rodrigo 'Albo' Arce <albo@pragmore.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragmore/fernet.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "livereload": "^0.9.3",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "livereload": "livereload -ee 'json'",
+    "css-build": "node-sass sass/main.scss public/css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "js-build": "babel app --out-dir public/js",
+    "js-watch": "npm run js-build -- --watch",
+    "deploy": "npm run css-build && npm run js-build",
+    "server": "FSH=${npm_config_host:-127.0.0.1}:${npm_config_port:-15678} && xdg-open http://$FSH && php -S $FSH -t public server.php",
+    "start": "npm-run-all --parallel livereload css-watch js-watch server"
+  }
+}
