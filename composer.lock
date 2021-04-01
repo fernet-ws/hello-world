@@ -1117,12 +1117,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pragmore/fernet-core.git",
-                "reference": "0b6ce1bc0141cd627d321faba464c8598c2e322d"
+                "reference": "a568ec7bf5e9aee41cdba366691e5b689b509825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pragmore/fernet-core/zipball/0b6ce1bc0141cd627d321faba464c8598c2e322d",
-                "reference": "0b6ce1bc0141cd627d321faba464c8598c2e322d",
+                "url": "https://api.github.com/repos/pragmore/fernet-core/zipball/a568ec7bf5e9aee41cdba366691e5b689b509825",
+                "reference": "a568ec7bf5e9aee41cdba366691e5b689b509825",
                 "shasum": ""
             },
             "require": {
@@ -1168,7 +1168,7 @@
                 "issues": "https://github.com/pragmore/fernet-core/issues",
                 "source": "https://github.com/pragmore/fernet-core/tree/0.x"
             },
-            "time": "2021-04-01T04:27:44+00:00"
+            "time": "2021-04-01T13:54:39+00:00"
         },
         {
             "name": "graham-campbell/result-type",

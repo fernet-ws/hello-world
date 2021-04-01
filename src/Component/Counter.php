@@ -14,7 +14,7 @@ class Counter
 
     public function __construct(NumberToWord $numberToWord)
     {
-        $this->initState('number', number: 0);
+        $this->initState(number: 0);
         $this->numberToWord = $numberToWord;
     }
 
