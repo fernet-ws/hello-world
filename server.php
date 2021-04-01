@@ -1,6 +1,6 @@
 <?php
 
-$file = __DIR__ . '/public' . $_SERVER["REQUEST_URI"];
+$file = __DIR__ . '/public' . strstr($_SERVER["REQUEST_URI"] . '?', '?', true);
 if (file_exists($file) && is_file($file)) {
     return false;
 }

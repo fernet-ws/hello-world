@@ -28,7 +28,7 @@ class App
       <Counter />
     </section>
     <footer>
-        <a href="https://github.com/pragmore/hello-world-in-fernet">View the code</a>
+        <a href="https://github.com/pragmore/hello-world-in-fernet"><span class="icon-github"></span> View the code</a>
     </footer>
     <LiveReload />
   </body>

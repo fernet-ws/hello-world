@@ -35,7 +35,7 @@ class Counter
 
           <Button <?= params(onClick: function () {
             $this->setState(number: 0);
-          }) ?>>Clean</Button>
+          }) ?> ariaLabel="Reset"><span class="icon-ccw"></span></Button>
         </p>
 <?php 
         return ob_get_clean();

@@ -6,10 +6,12 @@ namespace App\Component;
 class Button 
 {
     public $onClick;
+    public ?string $ariaLabel = null;
 
     public function __toString(): string
     {
         $onClickHtml = onClick($this->onClick);
-        return "<a class=\"button\" {$onClickHtml}>{$this->childContent}</a>";
+        $ariaLabel = $this->ariaLabel ? "aria-label=\"$this->ariaLabel\"" : '';
+        return "<a class=\"button\" {$ariaLabel} {$onClickHtml}>{$this->childContent}</a>";
     }
 }
