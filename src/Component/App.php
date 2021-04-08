@@ -30,6 +30,11 @@ class App
     <footer>
         <a href="https://github.com/fernet-ws/hello-world" target="_blank"><span class="icon-github"></span> View the code</a>
     </footer>
+    <script async src="https://cdn.panelbear.com/analytics.js?site=9giMuZX5Wzn"></script>
+    <script>
+        window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
+        panelbear('config', { site: '9giMuZX5Wzn' });
+    </script>
     <LiveReload />
   </body>
 </html><?php
